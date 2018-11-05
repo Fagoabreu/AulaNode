@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução ao Node JS</title>
+  </head>
+  <body>
+    <h1>Página de Home</h1>
+    <% var texto = "Trabalhando com EJB"; %>
+    <p> <%=texto %></p>
+    <ul>
+      <% for(var chave in clientes){ %>
+      <li><%= clientes[chave].nome %> - <%= clientes[chave].email %> - <%= clientes[chave].dtNasc %>  </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
